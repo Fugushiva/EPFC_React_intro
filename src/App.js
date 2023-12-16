@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import "./style.css";
+import Message from "./Message";
+import SimpleQuotation from "./SimpleQuotation";
+import Quotation from "./Quotation";
+import RandomQuotation from "./RandomQuotation";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Message></Message>
+      <SimpleQuotation></SimpleQuotation>
+      <Quotation count="1" shuffle author="Andrew Ryan"></Quotation>
+      <RandomQuotation></RandomQuotation>
+    </>
   );
 }
 
